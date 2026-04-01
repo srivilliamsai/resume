@@ -23,8 +23,7 @@ jobs:
           options: -v ${{ github.workspace }}:/data
           run: |
             cd data
-            pdflatex srivilliamsai.tex
-            mv srivilliamsai.pdf srivilliamsai_resume.pdf
+            pdflatex srivilliamsai_resume.tex
       
       - name: Convert PDF to PNG preview
         run: |
