@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Sri Villiam Sai
+% License : MIT
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Sri Villiam Sai A} \\ \vspace{8pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 7339312067 ~ \href{mailto:srivilliamsai@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{srivilliamsai@gmail.com}} ~ 
+    \href{https://linkedin.com/in/srivilliamsai}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/srivilliamsai}} ~
+    \href{https://github.com/srivilliamsai}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/srivilliamsai}}
+    \vspace{0pt}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, Swift, JavaScript, TypeScript, SQL} \\ \vspace{3pt}
+     \textbf{Frameworks}{: Spring Boot, Spring MVC, Spring Cloud, Spring Security, JPA/Hibernate, React.js, Tailwind CSS} \\ \vspace{3pt}
+     \textbf{Technologies \& Tools}{: Flutter, Bootstrap, Git, GitHub, Postman, Figma, Eclipse, VS Code, Xcode, REST APIs, Docker, MySQL, Firebase, Redis, Kubernetes, Kafka} \\ \vspace{3pt}
+     \textbf{Soft Skills}{: Leadership, Problem-Solving, Innovation \& Creativity, Agile Practices (Scrum), Teamwork}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Valliammai Engineering College}{Oct 2020 -- Apr 2024}
+      {B.Tech. in Information Technology (CGPA: 7.80/10)}{Chennai, India}
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Infosys Springboard}{Nov 2025 -- Jan 2026}
+      {Java Full Stack}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Built a full-stack personal carbon footprint tracker using React.js and Spring Boot, integrating external REST APIs to calculate carbon data while developing interactive user features like leaderboards and an eco-marketplace.}
+        \resumeItem{Optimized API response times with Redis caching, secured user data using JWT authentication and Role-Based Access Control (RBAC), and successfully deployed the application using Docker and Kubernetes.}
+        \resumeItem{Java, Spring Boot, React.js, Tailwind CSS, MySQL, Redis, Kubernetes, Docker, JWT, REST APIs, Carbon Interface API.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Zidio Development}{Jun 2025 -- Sep 2025}
+      {Java Full Stack}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Built a scalable microservices ecosystem using Spring Boot and Spring Cloud, setting up 16+ distinct services (including Recruitment, Analytics, and Payment) via Eureka Server for dynamic service discovery and centralized configuration management.}
+        \resumeItem{Developed a secure API Gateway with JWT-based stateless authentication and load balancing, and created recruitment workflows featuring an asynchronous Email Service for real-time notifications and a File Upload Service with path sanitization for secure resume storage.}
+        \resumeItem{Java, React.js, Tailwind CSS, Spring Boot, Spring Cloud, MySQL, API Gateway, Eureka, JWT, Microservices, REST APIs, Docker.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Carbon Personal Footprint App} $|$ \emph{Java, Spring Boot, React.js, MySQL, Tailwind CSS}}{2026}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack sustainability dashboard using Spring Boot and React.js, integrating REST APIs for real-time carbon emission tracking and data visualization.}
+            \resumeItem{Implemented a secure JWT authentication module using Spring Security and a gamified leaderboard system with efficient data persistence in MySQL.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{CRM Application} $|$ \emph{Java, Spring Boot, React.js, Microservices, Kafka}}{2025}
+          \resumeItemListStart
+            \resumeItem{Developed a comprehensive enterprise resource planning dashboard using Spring Boot microservices and React.js, integrating dynamic Kanban boards and real-time sales pipeline tracking.}
+            \resumeItem{Configured a secure Role-Based Access Control (RBAC) system and an automated rule-processing workflow engine, utilizing Kafka for instant user notifications.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------CERTIFICATIONS---------------
+\section{Certifications}
+  \resumeItemListStart
+    \resumeItem{\textbf{OCI Certified Developer Professional – Oracle (2025)}: Demonstrated proficiency in developing, testing, and securing high-performance cloud-native applications on Oracle Cloud Infrastructure.}
+    \resumeItem{\textbf{OCI Certified AI Foundations Associate – Oracle (2025)}: Validated knowledge in foundational AI concepts including Machine Learning, Deep Learning, and Neural Networks across cloud platforms.}
+    \resumeItem{\textbf{Data Structures and Performance – UC San Diego (2025)}: Mastered advanced Object-Oriented Programming principles, algorithmic performance tuning, and comprehensive unit testing in Java.}
+  \resumeItemListEnd
+
+\end{document}
