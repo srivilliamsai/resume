@@ -24,8 +24,15 @@ jobs:
           run: |
             cd data
             pdflatex srivilliamsai.tex
+            mv srivilliamsai.pdf srivilliamsai_resume.pdf
+      
+      - name: Convert PDF to PNG preview
+        run: |
+          sudo apt-get update && sudo apt-get install -y poppler-utils imagemagick
+          pdftoppm srivilliamsai_resume.pdf resume_preview -png -singlefile -rx 150 -ry 150
+          mv resume_preview.png resume_preview.png || true
             
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Apply pdflatex changes [skip ci]"
-          file_pattern: "*.pdf"
+          commit_message: "Update resume PDF and preview [skip ci]"
+          file_pattern: "*.pdf *.png"
